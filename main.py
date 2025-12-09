@@ -17,4 +17,15 @@ def leerPartidos():
                 "goles_visitante":goles_visitante
             }
             partidos.append(partido)
-    return partidos        
+    return partidos 
+
+
+def equipos(datosLiga):
+
+    conjunto_equipos = set()
+
+    for partido in datosLiga:
+        conjunto_equipos.add(partido['equipoCasa'])
+        conjunto_equipos.add(partido['equipoFuera'])
+
+    return conjunto_equipos
