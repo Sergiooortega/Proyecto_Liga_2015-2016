@@ -7,7 +7,9 @@ Realizaremos un programa que muestre la tabla de clasificación al final de la l
 2. QuienGana(resultado)
 3. Puntos(info)
 4. Clasificacion(datos)
+
 **Moi** se encarga de las funciones:
+
 1. LeerPartidos()
 2. impClasificacion(liga)
 3. Equipos(datosliga)
