@@ -83,3 +83,17 @@ def clasificacion(datos):
                 datos[i], datos[j] = datos[j], datos[i]
     return datos
 
+def impClasificacion(liga):
+    datos_clasificados = clasificacion(liga)
+    
+    print("{:<5}{:<20}{:<5}{:<5}{:<5}{:<5}{:<5}".format("Pos", "Equipo", "PJ", "PG", "PE", "PP", "Pts"))
+    
+    for index, equipo in enumerate(datos_clasificados, 1):
+        nombre_equipo = equipo[0]
+        ganados = equipo[1]
+        empatados = equipo[2]
+        perdidos = equipo[3]
+        puntos = equipo[4]
+        
+        print("{:<5}{:<20}{:<5}{:<5}{:<5}{:<5}".format(index, nombre_equipo,ganados, empatados, perdidos, puntos))
+
